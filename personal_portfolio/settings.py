@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'projects',
 ]
 
 MIDDLEWARE = [
@@ -75,8 +76,12 @@ WSGI_APPLICATION = 'personal_portfolio.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'djongo',
+        'NAME': 'Cluster0',
+        'HOST': 'mongodb+srv://almas_228:<Almassapar123>@cluster0-gyhws.mongodb.net/test?retryWrites=true&w=majority',
+        'USER': 'almas_228',
+        'PASSWORD': 'Almassapar123',
+         
     }
 }
 
