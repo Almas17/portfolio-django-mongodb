@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'projects',
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'personal_portfolio.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["personal_portfolio/templates/"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -77,8 +78,8 @@ WSGI_APPLICATION = 'personal_portfolio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'Cluster0',
-        'HOST': 'mongodb+srv://almas_228:<Almassapar123>@cluster0-gyhws.mongodb.net/test?retryWrites=true&w=majority',
+        'NAME': 'final',
+        'HOST': 'mongodb+srv://almas_228:<password>@cluster0-gyhws.mongodb.net/test?retryWrites=true&w=majority',
         'USER': 'almas_228',
         'PASSWORD': 'Almassapar123',
          
@@ -123,3 +124,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
